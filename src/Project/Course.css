@@ -1,0 +1,108 @@
+
+.App {
+    text-align: center;
+    align-items: center;
+  
+    
+  }
+  
+  .App-header {
+    font-style: italic;
+    
+
+    background-color: #282c34;
+    height: 10vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  
+  .card-container {
+    
+  display: inline-flex;
+  flex-direction: row;
+   
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card {
+display:inline-flex;
+
+  height:100%;
+    width: calc(50% - 10px);
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 20px;
+  }
+  
+
+  
+  .card img {
+   display: flex;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size:xx-large;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+    
+  }
+  .imagediv{
+    margin-top: -2    0px;
+    padding-top: 30px;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  
+  .card-price {
+    font-size: 1.25rem;
+  }
+  
+  .card-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+   
+  }
+  
+  .card-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  
