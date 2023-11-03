@@ -1,108 +1,87 @@
+/* CSS for CourseDisplay component */
 
-.App {
-    text-align: center;
-    align-items: center;
-  
-    
-  }
-  
-  .App-header {
-    font-style: italic;
-    
+.card-container {
+  float:left;
+  width: 20.33%;
+  padding: 5px;
+  margin: 20px;
+ 
+}
 
-    background-color: #282c34;
-    height: 10vh;
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  
-  .card-container {
-    
-  display: inline-flex;
-  flex-direction: row;
-   
-    width: 50%;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .card {
-display:inline-flex;
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 8px 8px 8px  rgb(194, 194, 219);
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 300px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.5s;
+  height:300PX;
+}
+.card:hover .overlay{
+  transform: scale(1);
+}
 
-  height:100%;
-    width: calc(50% - 10px);
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 20px;
-  }
-  
+.card-body {
+  padding: 20px;
+}
 
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.imagediv {
+  display: grid;
+  align-items: center;
+}
+
+.imagediv img {
+  max-width: 100%;
+  max-height: 150px;
+  margin-right: 10px;
+}
+
+.desc {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+ 
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   
-  .card img {
-   display: flex;
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 1rem;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size:xx-large;
-    padding-top: 0px;
-    margin-top: 0px;
-    
-    
-  }
-  .imagediv{
-    margin-top: -2    0px;
-    padding-top: 30px;
-  }
-  
-  .card-description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  .card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
-  }
-  
-  .card-price {
-    font-size: 1.25rem;
-  }
-  
-  .card-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-   
-  }
-  
-  .card-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .5s ease;
+}
+
+
+
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 50px;
+ 
+}

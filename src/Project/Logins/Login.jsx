@@ -292,13 +292,15 @@
 // export default Login;
 
 import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
-import { Navigate } from 'react-router-dom';
-import './Login.css'
+import { Link, Navigate } from 'react-router-dom';
+import styles from './Login.css';
+
+
 
 function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
   const [error, setError] = useState(null);
   const [loggedIn, setLoggedIn] = useState(false);
 
@@ -309,6 +311,8 @@ function LoginForm() {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
+
+  
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -339,37 +343,43 @@ function LoginForm() {
   };
 
   return (
+    
     <div className='main-form'>
- 
-    <div className='login-container'>
-      {loggedIn ? (
-        // Redirect to the dashboard page if loggedIn is true
-        <Navigate to="/course" />
-      ) : (
-        // Display the login form if loggedIn is false
-        <form onSubmit={handleFormSubmit}>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" value={email} onChange={handleEmailChange} />
-          </div>
-          <div>
-            <label htmlFor="password">Password:</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={handlePasswordChange}
-            />
-          </div>
-          {error && <div>{error}</div>}
-          <button type="submit">LOGIN</button>
-        </form>
-      )}
+        
+
+      <div className='login-container'>
+        {loggedIn ? (
+          <Navigate to="/course" />
+        ) : (
+          <form onSubmit={handleFormSubmit}>
+            <div>
+              <h2 className='custom-h2'><marquee>WELCOME BACK !</marquee></h2>
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" value={email} onChange={handleEmailChange} />
+            </div>
+            <div>
+              <label htmlFor="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                value={password}
+                onChange={handlePasswordChange}
+              />
+            </div>
+            
+           
+            {error && <div>{error}</div>}
+            <div className={styles.myComponent}>
+            <button type="submit">LOGIN</button>
+            </div>
+         
+            
+            <Link to="/registration" className='newuser'>New User ?</Link>
+          </form>
+        )}
+      </div>
     </div>
-   
-   </div>
   );
 }
-
 
 export default LoginForm;

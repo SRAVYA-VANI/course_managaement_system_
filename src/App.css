@@ -45,7 +45,7 @@ nav ul li a:hover {
 .hero {
   background-image: url("https://wallpaperaccess.com/full/1692872.jpg");
   background-size: cover;
-  height: 800px;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;

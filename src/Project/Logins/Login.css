@@ -4,13 +4,13 @@ background-repeat: no-repeat;
 padding-bottom: 100px;
 padding-top: 20px;
 padding-right: 280px;
-
- 
 align-items: center;
+ position: inherit;
+
 } 
 
 .login-container {
-  /* background-image:url('https://thumbs.gfycat.com/AbleTastyCirriped-size_restricted.gif'); */
+  background-image:url('https://thumbs.gfycat.com/AbleTastyCirriped-size_restricted.gif');
  
   
   border: 2px #000000;

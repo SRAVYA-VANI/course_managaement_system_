@@ -1,0 +1,71 @@
+/* AdminLogin.css */
+.main-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-color: #f2f2f2;
+}
+
+.icons-container {
+  /* Add styles for your icons or branding elements here */
+}
+
+.email-pass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main-e {
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-but {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.l-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.l-button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin: 10px 0;
+}/* AdminLogin.css */
+/* AdminLogin.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust the height to make the container smaller */
+  background-color: #f2f2f2; /* You can set the background color of the container here */
+  border: 1px solid #ccc; /* Add a border for styling */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding for spacing within the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional box shadow for a visual effect */
+}
+
+/* ... (rest of your CSS remains the same) */
+
+/* ... (rest of your CSS remains the same) */
+
